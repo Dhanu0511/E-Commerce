@@ -3,69 +3,398 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>E-Commerce</title>
-  <link href="homepage.css" rel="stylesheet" type="text/css" />
+  <link href="" rel="stylesheet" type="text/css" />
+  <style>
+    
+*{
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+
+}
+.cf{
+    text-align: center; 
+    color: black; 
+    font-size: 48px;
+     font-family: Integral CF; 
+     font-weight: 700; 
+    word-wrap: break-word
+}
+
+.titlee{
+color: black;
+font-size: 64px;
+font-family: Integral CF;
+font-weight: 700;
+line-height: 64px;
+word-wrap: break-word ;
+position:absolute;
+top: 40%;
+left: 20%;
+transform: translate(-50%, -50%);
+}
+.titlee2{   
+ color: rgba(0, 0, 0, 0.60);
+ font-size: 16px;
+ font-family: Satoshi;
+ font-weight: 400;
+ line-height: 22px;
+ word-wrap: break-word;
+ position:absolute;
+ top: 60%;
+ left: 20%;
+ transform: translate(-50%, -50%);
+}
+
+.titlee3{
+color: white;
+font-size: 16px;
+font-family: Satoshi;
+font-weight: 500;
+word-wrap: break-word ;
+position:absolute;
+ top: 70%;
+ left: 12%;
+ transform: translate(-50%, -50%);
+ width: 10em;
+  height: 2em; 
+  padding-left: 54px; 
+  padding-right: 54px; 
+  padding-top: 16px; 
+  padding-bottom: 16px; 
+  background: black; 
+  border-radius: 62px; 
+  overflow: hidden; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 12px; 
+  display: inline-flex
+}
+
+.titlee4{
+
+font-family: Satoshi;
+font-weight: 700;
+word-wrap: break-word ;
+color: rgba(0, 0, 0, 0.60);
+ font-size: 16px;
+ line-height: 22px;
+}
+
+.main{
+position: absolute;
+top: 90%;
+left: 20%;
+transform: translate(-50%, -50%);
+justify-content: flex-start; 
+align-items: center;
+gap: 50px;
+display: flex
+}
+.parent{
+  display: grid;
+  grid-template-rows:1fr 1fr 1fr 1fr;
+  gap: 5%;
+  text-align: left;
+}
+.shop{
+    color: black; font-size: 32px; font-family: Integral CF; font-weight: 700; word-wrap: break-word
+}
+.main-image{
+    width: 100%;height: 100%; background: linear-gradient(0deg, #F2F0F1 0%, #F2F0F1 100%)
+}
+.t1{
+    width: 24px; height: 24px; position: relative
+}
+.icon{
+    width: 22.13px; height: 20.25px; left: 0px; top: 1.88px; position: absolute; background: white
+}
+.item{
+    color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word
+}
+
+.rating1{
+    color: black; font-size: 14px; font-family: Satoshi; font-weight: 400; word-wrap: break-word
+}
+.rating2{
+    color: rgba(0, 0, 0, 0.60); font-size: 14px; font-family: Satoshi; font-weight: 400; word-wrap: break-word
+}
+.staricon{
+    width: 10.79px; height: 20.72px
+}
+  </style>
 </head>
 
+
+
+
  <body>
-    <div style="width: 100%; height: 100%; padding-top: 9px; padding-bottom: 9px; padding-left: 544px; padding-right: 100px; background: black; justify-content: flex-start; align-items: flex-start; gap: 425px; display: inline-flex">
-        <div><span style="color: white; font-size: 14px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Sign up and get 20% off to your first order. </span><span style="color: white; font-size: 14px; font-family: Satoshi; font-weight: 500; text-decoration: underline; word-wrap: break-word">Sign Up Now</span></div>
-        <button class=" close-button" aria-label="Close alart" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
+    <div style="width: 100%; height: 100%; padding-top: 9px; padding-bottom: 9px; background: black; justify-content: flex-end; align-items: flex-start; gap: 500px; display: inline-flex;">
+            <div><span style="color: white; font-size: 14px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Sign up and get 20% off to your first order. </span><span style="color: white; font-size: 14px; font-family: Satoshi; font-weight: 500; text-decoration: underline; word-wrap: break-word">Sign Up Now</span></div>
+            <div style="width: 20px; height: 20px; position: relative;padding-right: 10%; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <img style="width: 15.13px; height: 15.13px;" src="./image/close.svg"></img>
+            </div>
+    </div> 
+
     
-    
-    <div style="width: 100%; height: 10%; justify-content: center; align-items: center; gap: 30px; display: inline-flex">
+<div style="align-content: center;justify-content: center; padding-bottom: 10px; padding-top: 10px;padding-left: 5%;padding-right: 10%;">
+    <div style=" width: 100%; justify-content: center; align-items: center; gap: 30px; display: inline-flex ">
         <!-- It is for shop.co-->
-        <div style="color: black; font-size: 32px; font-family: Integral CF; font-weight: 700; word-wrap: break-word">SHOP.CO</div>
+        <div class="shop">SHOP.CO</div>
         <!-- It is for shop to brands-->
         <div style="justify-content: flex-start; align-items: center; gap: 24px; display: flex">
             <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
-                <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Shop</div>
+                <div class="item">Shop</div>
                 <div style="width: 16px; height: 16px; position: relative">
                     <img src="./image/arrow.svg" style="width: 13.50px; height: 10.50px; left: 2.25px; top: 5.25px; position: absolute; background: white"></img>
                 </div>
             </div>
-            <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">On Sale</div>
-            <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">New Arrivals</div>
-            <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Brands</div>
+            <div class="item">On Sale</div>
+            <div class="item">New Arrivals</div>
+            <div class="item">Brands</div>
         </div>
+        
         <!-- It is for search products-->
-        <div style="flex: 1 1 0; height: 20px; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; background: #F0F0F0; border-radius: 62px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+        <div style="flex: 1 1 0;  padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; background: #F0F0F0; border-radius: 62px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
             <div style="width: 24px; height: 24px; position: relative">
-                <img style="width: 22.27px; height: 22.27px; left: 1.86px; top: 1.86px; position: absolute; background: rgba(0, 0, 0, 0.40)" src="./image/search.svg"></img>
+                <img style="width: 22.27px; height: 22.27px; left: 1.86px; top: 1.86px; position: relative; background: #F0F0F0;" src="./image/search.svg"></img>
             </div>
             <div style="color: rgba(0, 0, 0, 0.40); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Search for products...</div>
         </div>
+
+
         <!-- It is for profile and bag sign-->
         <div style="justify-content: flex-start; align-items: flex-start; gap: 5px; display: flex">
-            <div style="width: 24px; height: 24px; position: relative">
-                <img style="width: 22.13px; height: 20.25px; left: 0px; top: 1.88px; position: absolute; background: white" src="./image/addcart.svg">
+            <div class="t1">
+                <img class="icon" src="./image/addcart.svg">
             </div>
         
-            <div style="width: 24px; height: 24px; position: relative">
-                <img style="width: 22.13px; height: 20.25px; left: 0px; top: 1.88px; position: absolute; background: white" src="./image/profile.svg" /> 
+            <div class="t1">
+                <img class="icon" src="./image/profile.svg" /> 
             </div>
         </div>
     </div>
-<div>
-    <img style="width: 100%; height: 100%; background: linear-gradient(0deg, #F2F0F1 0%, #F2F0F1 100%)" src="./image/pic.png" />
+</div>
+
+
+    <img class="main-image" src="./image/pic.png"/>
+
     <div style="justify-content: flex-start; align-items: center; gap: 150px; display: flex">
         <div class="titlee">FIND CLOTHES<br> THAT MATCHES<br> YOUR STYLE</div>
-        <img style="width: 5%; height: 5%; background: black; position: absolute; top: 30%;left: 90%; transform: translate(-50%, -50%)" src="./image/star1.svg">
+        <img style="width: 15%; height: 15%;  position: absolute; top: 30%;left: 90%; transform: translate(-50%, -50%)" src="./image/star1.svg">
     </div>
+
     <div style="justify-content: flex-start; align-items: center; gap: 150px; display: flex">
         <div class="titlee2">Browse through our diverse range of meticulously crafted garments, designed <br>to bring out your individuality and cater to your sense of style.</div>
-        <img style="width: 30px; height: 20px; background: black; position: absolute; top: 60%;left: 50%; transform: translate(-50%, -50%)" src="./image/star2.svg">
+        <img style="width: 10%; height: 5%;  position: absolute; top: 60%;left: 50%; transform: translate(-50%, -50%)" src="./image/star2.svg">
     </div>
-    <div class="titlee3" style="width: 10em; height: 2em; padding-left: 54px; padding-right: 54px; padding-top: 16px; padding-bottom: 16px; background: black; border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
-    <div style="color: white; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">Shop Now</div>
+
+    <div class="titlee3">
+    <div>Shop Now</div>
     </div>
-    <div class="main" style="justify-content: flex-start; align-items: center; gap: 50px; display: flex">
-         <div class="titlee4">200+<p style="color: rgba(0, 0, 0, 0.60); font-size: 16px;font-family: Satoshi;font-weight: 400;line-height: 22px;word-wrap: break-word ">International Brands</div>
-         <div class="titlee4">2,000+<p style="color: rgba(0, 0, 0, 0.60); font-size: 16px;font-family: Satoshi;font-weight: 400;line-height: 22px;word-wrap: break-word">High-Quality Products</div>
-         <div class="titlee4">30,000+<p style="color: rgba(0, 0, 0, 0.60); font-size: 16px;font-family: Satoshi;font-weight: 400;line-height: 22px;word-wrap: break-word ">Happy Customers</div>
+
+    <div class="main">
+         <div class="shop">200+<p class="titlee4">International Brands</div>
+         <div class="shop">2,000+<p class="titlee4">High-Quality Products</div>
+         <div class="shop">30,000+<p class="titlee4">Happy Customers</div>
+    </div>
+
+    <div style="align-content: center;justify-content: center; padding-bottom: 43px; padding-top: 43px;width: 100%; height: 100%; background: black">
+        <div style=" background-color: black; width: 100%; justify-content: center; align-items: start; gap: 10%; display: inline-flex ">
+            <img src="./image/versace.png">
+            <img src="./image/zara.png">
+            <img src="./image/gucci.png">
+            <img src="./image/prada.png">
+            <img src="./image/calvin.png">
+        </div>   
+    </div>
+
+    <div style="justify-content: center; align-items: center; gap: 150px; display: flex; padding-top: 3%; padding-bottom: 1%;">
+        <div class="cf">NEW ARRIVALS</div>
+    </div>
+    <div style="align-content: center;border-radius: 30px; justify-content: center; padding-left: 10%;padding-right: 10%;" >
+
+
+        <div style="width: 100%;height: 100%; justify-content: center; align-items: center; gap: 5%; display: inline-flex ">
+            <div style="height: 100%; width: 100%; justify-content: center; align-items: center; gap: 30px; display: inline-flex ">
+             <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image7.png" />
+                <div><b>T-SHIRT WITH TAPE DETAILS</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div>$120</div>
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image8.png" />
+                <div><b> FIT JEANS</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">3.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                <div>$240</div>
+                <div style="color: rgba(0, 0, 0, 0.40); font-size: 24px; font-family: Satoshi; font-weight: 700; text-decoration: line-through; word-wrap: break-word">$160</div>
+                <div style="background-color: rgba(255, 51, 51, 0.10); color: #FF3333; font-size: 12px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">-20%</div>
+                </div>
+
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image9.png" />
+                <div><b>CHECKERED SHIRT</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div>$180</div>
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image10.png" />
+                <div><b>SLEEVE STRIPED T-SHIRT</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                <div>$130</div>
+                <div style="color: rgba(0, 0, 0, 0.40); font-size: 24px; font-family: Satoshi; font-weight: 700; text-decoration: line-through; word-wrap: break-word">$160</div>
+                <div style="background-color: rgba(255, 51, 51, 0.10); color: #FF3333; font-size: 12px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">-20%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div style="align-content: center; justify-content: center; padding-left:43%; padding-top: 50px;">
+    <div style="width: 10%; height: 50%; padding-left: 54px; padding-right: 54px; padding-top: 16px; padding-bottom: 16px; border-radius: 62px; overflow: hidden; border: 2px rgba(0, 0, 0, 0.10) solid; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+    <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">View All</div>
+</div>
+</div>
+
+<div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid"></div>
+
+
+ <div style="justify-content: center; align-items: center; gap: 150px; display: flex; padding-top: 3%; padding-bottom: 1%;">
+        <div class="cf">TOP SELLING</div>
+    </div>
+    <div style="align-content: center;border-radius: 30px; justify-content: center; padding-left: 10%;padding-right: 10%;" >
+
+
+        <div style="width: 100%;height: 100%; justify-content: center; align-items: center; gap: 5%; display: inline-flex ">
+            <div style="height: 100%; width: 100%; justify-content: center; align-items: center; gap: 30px; display: inline-flex ">
+             <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image 7.png" />
+                <div><b>VERTICAL STRIPED SHIRT</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div>$212</div>
+                    <div style="color: rgba(0, 0, 0, 0.40); font-size: 24px; font-family: Satoshi; font-weight: 700; text-decoration: line-through; word-wrap: break-word">$232</div>
+                    <div style="background-color: rgba(255, 51, 51, 0.10); color: #FF3333; font-size: 12px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">-20%</div>
+                    </div>
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image 8.png" />
+                <div><b>COURAGE GRAPHIC T-SHIRT</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">3.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div>$145</div>
+                
+
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image 9.png" />
+                <div><b>LOOSE FIT BERMUDA SHORTS</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div>$80</div>
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/image 10.png" />
+                <div><b>FADED SKINNY JEANS</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                
+                <div>$210</div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<div style="align-content: center; justify-content: center; padding-left:43%; padding-top: 50px;">
+    <div style="width: 10%; height: 50%; padding-left: 54px; padding-right: 54px; padding-top: 16px; padding-bottom: 16px; border-radius: 62px; overflow: hidden; border: 2px rgba(0, 0, 0, 0.10) solid; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+    <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">View All</div>
     </div>
 </div>
-     
+
+<div style="width: 100%; height: 100%; position: relative; background: #F0F0F0; border-radius: 40px; overflow: hidden"> 
+<div style="text-align: center; color: black; font-size: 48px; font-family: Integral CF; font-weight: 700; word-wrap: break-word">BROWSE BY DRESS STYLE</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
 </body>
