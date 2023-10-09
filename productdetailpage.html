@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>E-Commerce</title>
+  <link href="" rel="stylesheet" type="text/css" />
+  
+<style>
+ 
+    @media only screen and (max-width: 600px) {
+  .flex1 {
+    flex-direction: row;
+    width: 10%;
+    height: max-content;
+  }
+  .flex2 {
+    width: 20%;
+    height: max-content;
+  }
+  .flex3 {
+    flex-direction: row;
+    width: 30%;
+  }
+ }   
+ .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: black;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    .div5 { grid-area: 1 / 5 / 2 / 6; }
+       
+.flexrow{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}
+.flex1{
+    width: 10%;
+} 
+.flex2{
+    width: 30%;
+}
+.flex3{
+    width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  .demo {
+    background-color: rgb(1, 12, 15);
+  }
+}
+
+
+</style>
+</head>
+
+
+
+ 
+
+
+ <body>
+    <div class="demo" style="width: 100%; height: 100%; padding-top: 9px; padding-bottom: 9px; background: black; justify-content: flex-end; align-items: flex-start; gap: 500px; display: inline-flex;">
+            <div style="color: white; font-size: 14px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Sign up and get 20% off to your first order. </><span style="color: white; font-size: 14px; font-family: Satoshi; font-weight: 500; text-decoration: underline; word-wrap: break-word">Sign Up Now</span></div>
+            <div style="width: 20px; height: 20px; position: relative;padding-right: 10%; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                <img style="width: 15.13px; height: 15.13px;" src="./image/close.svg"></img>
+            </div>
+    </div> 
+
+    
+<div style="align-content: center;justify-content: center; padding-bottom: 10px; padding-top: 10px;padding-left: 5%;padding-right: 10%;">
+    <div class="demo" style=" width: 100%; justify-content: center; align-items: center; gap: 30px; display: inline-flex ">
+        <!-- It is for shop.co-->
+        <div class="shop">SHOP.CO</div>
+        <!-- It is for shop to brands-->
+        <div style="justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                <div class="item">Shop</div>
+                <div style="width: 16px; height: 16px; position: relative">
+                    <img src="./image/arrow.svg" style="width: 13.50px; height: 10.50px; left: 2.25px; top: 5.25px; position: absolute; background: white"></img>
+                </div>
+            </div>
+            <div class="item">On Sale</div>
+            <div class="item">New Arrivals</div>
+            <div class="item">Brands</div>
+        </div>
+        
+        <!-- It is for search products-->
+        <div style="flex: 1 1 0;   padding-top: 12px; padding-bottom: 12px; background: #F0F0F0; border-radius: 62px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div style="width: 24px; height: 24px; position: relative">
+                <img style="width: 22.27px; height: 22.27px; left: 10.86px; position: relative; background: #F0F0F0;" src="./image/search.svg"></img>
+            </div>
+            <div style="color: rgba(0, 0, 0, 0.40); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Search for products...</div>
+        </div>
+
+
+        <!-- It is for profile and bag sign-->
+        <div style="justify-content: flex-start; align-items: flex-start; gap: 5px; display: flex">
+            <div class="t1">
+                <img class="icon" src="./image/addcart.svg">
+            </div>
+        
+            <div class="t1">
+                <img class="icon" src="./image/profile.svg" /> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid"></div>
+
+
+<div class="demo" style="width: 100%; height: 100%; justify-content: flex-start;flex-direction: row; align-items: center; gap: 4px; display: inline-flex;padding-top: 2%;">
+    <div style="padding-left: 50px; width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+            <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Home</div>
+            <div  style="width: 16px; height: 16px; position: relative;">
+                <img  style="width: 15.50px; height: 10.50px; left: 2px; top: 3.2px; position: absolute; " src="./image/forward_arrow.svg"></img>
+            </div>
+        </div>
+        <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+            <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Shop</div>
+            <div style="width: 16px; height: 16px; position: relative; ">
+                <img style="width: 15.50px; height: 10.50px; left: 2px; top: 3.2px; position: absolute; " src="./image/forward_arrow.svg"></img>
+            </div>
+        </div>
+        <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+            <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Men</div>
+            <div style="width: 16px; height: 16px; position: relative;">
+                <img style="width: 15.50px; height: 10.50px; left: 2px; top: 3.2px; position: absolute; " src="./image/forward_arrow.svg"></img>
+            </div>
+        </div>
+        <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">T-shirts</div>
+    </div>
+    
+</div>
+
+
+<div class="flexrow">
+    <div  class="flex1">
+        <div class="demo" style="width: 100%;height: 100%;justify-content: flex-start;display: inline-flex; padding-top: 2%;">
+            <div style="flex-direction:column; width: 100%; height: 100%; justify-content: flex-start;  gap: 12px; display: inline-flex">
+                <img style="width: 100%; height: 100%; border-radius: 20px; border: 1px black solid" src="./image/shirt1.png" />
+                <img style="width: 100%; height: 100%; border-radius: 20px; border: 1px black solid" src="./image/shirt2.png" />
+                <img style="width: 100%; height: 100%; border-radius: 20px; border: 1px black solid" src="./image/shirt3.png" />
+            </div>
+        </div>
+    </div>
+    <div class="flex2">
+        <img style="width: 100%; height: 100%;  border-radius: 20px" src="./image/shirt4.png" />
+    </div>
+    <div class="flex3">
+        <div style="display: flex;flex-direction: column;gap: 5px;">
+            <div style="width: 100%;height: 100%;justify-content: flex-start;display: inline-flex; padding-top: 2%;">
+                <div style="flex-direction:column; width: 100%; height: 100%; justify-content: flex-start;  gap: 12px; display: inline-flex">
+                    <div style="color: black; font-size: 40px; font-family: Integral CF; font-weight: 700; word-wrap: break-word">One Life Graphic T-shirt</div>
+                </div>
+            </div>
+            <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; gap: 7.10px; display: flex">
+                    <img style="width: 15.75px; height: 25.35px;" src="./image/Star.svg"></img>
+                    <img style="width: 15.75px; height: 25.35px;" src="./image/Star.svg"></img>
+                    <img style="width: 15.75px; height: 25.35px;" src="./image/Star.svg"></img>
+                    <img style="width: 15.75px; height: 25.35px;" src="./image/Star.svg"></img>
+                    <img style="width: 15.75px; height: 25.35px;" src="./image/Star.svg"></img>
+                </div>
+                <div><span style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">4.5/</span><span style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">5</span></div>
+            </div>
+            <div style="display: flex;gap: 2%;">
+                <div style="color: black; font-size: 32px; font-family: Satoshi; font-weight: 700; word-wrap: break-word">$260</div>
+                <div style="color: rgba(0, 0, 0, 0.30); font-size: 32px; font-family: Satoshi; font-weight: 700; text-decoration: line-through; word-wrap: break-word">$300</div>
+                <div style="width: 30px; height: 100%; padding-left: 14px; padding-right: 14px; padding-top: 6px; padding-bottom: 6px; background: rgba(255, 51, 51, 0.10); border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                    <div style="color: #FF3333; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">-40%</div>
+                </div>
+            </div>
+            <div style="padding-bottom: 5px; width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and <br>breathable fabric, it offers superior comfort and style.</div>
+            <div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid;"></div>
+            <div style="color: rgba(0, 0, 0, 0.60);padding-top: 10px;padding-bottom: 5px; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Select Colors</div>
+            <div style="width: 100%; height: 100%;padding-bottom: 15px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                <div style="width: 37px; height: 37px; position: relative">
+                    <div style="width: 37px; height: 37px; position: absolute; background: #4F4631; border-radius: 9999px"></div>
+                    <div style="width: 16px; height: 16px; left: 7px; top: 7px; position: absolute">
+                        <img style="width: 18px; height: 15.50px; left: 1.75px; top: 3.75px; position: absolute" src="./image/tick.svg"></img>
+                    </div>
+                </div>
+                <div style="width: 37px; height: 37px; background: #314F4A; border-radius: 9999px"></div>
+                <div style="width: 37px; height: 37px; background: #31344F; border-radius: 9999px"></div>
+            </div>
+            <div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid"></div>
+            <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Choose Size</div>
+            <div style="display: flex; gap: 5px; width: 60%;padding-top: 10px;padding-bottom: 10px;">
+                <div style="width: 100%; height: 100%; padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: #F0F0F0; border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                    <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Small</div>
+                </div>
+                <div style="width: 100%; height: 100%; padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: #F0F0F0; border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                    <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Medium</div>
+                </div>
+                <div style="width: 100%; height: 100%; padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: black; border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                    <div style="color: white; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">Large</div>
+                </div>
+                <div style="width: 100%; height: 100%; padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: #F0F0F0; border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                    <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">X-Large</div>
+                </div>
+            </div>
+            <div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid;"></div>
+            <div style="display: flex; gap: 10px;width: 100%;padding-top: 10px;">
+                <div style="width: 30%; height: 100%; padding-left: 20px; padding-right: 20px; padding-top: 16px; padding-bottom: 16px; background: #F0F0F0; border-radius: 62px; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <div style="width: 18.75px; height: 2.25px; left: 2.62px; top: 10.88px; position: absolute; background: black"></div>
+                    </div>
+                    <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">1</div>
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img style="width: 18.75px; height: 18.75px; left: 2.62px; top: 2.62px; position: absolute;" src="./image/increment.svg"></img>
+                    </div>
+                </div>
+                <div style="width: 100%; height: 100%; padding-left: 54px; padding-right: 54px; padding-top: 16px; padding-bottom: 16px; background: black; border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                    <div style="color: white; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">Add to Cart</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<div style="padding-bottom: 10px;  display: flex; gap: 30%;padding-left: 15%;padding-right: 15%; ">
+    <div style="color: rgba(0, 0, 0, 0.60); font-size: 20px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">Product Details</div>
+    <div style="text-align: center; color: black; font-size: 20px; font-family: Satoshi; font-weight: 500; line-height: 22px; word-wrap: break-word">Rating & Reviews</div>
+    <div style="text-align: right; color: rgba(0, 0, 0, 0.60); font-size: 20px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">FAQs</div>
+</div>
+<div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid"></div>
+<div style=" width: 20%; height: 30%; border: 2px black solid;margin-left: 40%;"></div>
+<div style="display: flex;gap: 40%;width: 100%;">
+    <div style="padding-top: 20px; width: 100%; color: black; font-size: 24px; font-family: Satoshi; font-weight: 700; word-wrap: break-word">All Reviews  <span style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">    451</div>
+    <div style="display: flex;gap: 10px;width: 100%;padding-top: 10px;">
+        <div style="width: 10%; height: 40%; padding-left: 20px; padding-right: 20px; padding-top: 16px; padding-bottom: 16px; background: #F0F0F0; border-radius: 72px; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+            <div style="width: 24px; height: 24px; position: relative">
+                <img style="width: 25.25px; height: 20.75px;  top: 2.62px; position: absolute" src="./image/setting.svg"></img>
+            </div>
+        </div>
+        <div style="width: 40%; height: 40%; padding-left: 20px; padding-right: 20px; padding-top: 16px; padding-bottom: 16px; background: #F0F0F0; border-radius: 32px; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+            <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">Latest</div>
+            <div style="width: 16px; height: 16px; position: relative">
+                <img style="width: 15.50px; height: 10.50px; left: 2.25px; top: 3.25px; position: absolute" src="./image/arrow.svg"></img>
+            </div>
+        </div>
+        <div style="width: 100%; height: 40%; padding-left: 80px; padding-right: 10px; padding-top: 16px; padding-bottom: 16px; background: black; border-radius: 32px; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+            <div style="color: white; font-size: 16px; font-family: Satoshi; font-weight: 500; ">Write a Review</div>
+        </div>
+    </div>
+</div>
+<div>
+<div style="display: flex;gap: 20px;padding-left: 10%;padding-right: 10%;padding-top: 20px;">
+    <div style="display: flex;flex-direction: column; width: 50%; height: 100%; padding-left: 32px; padding-right: 32px; padding-top: 28px; padding-bottom: 28px; border-radius: 20px; overflow: hidden; border: 1px rgba(0, 0, 0, 0.10) solid; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="display: flex;width: 100%; gap: 80%;">
+            <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; gap: 6.49px; display: inline-flex">
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+            </div>  
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="width: 25.25px; height: 15.25px; left: 1.87px; top: 9.38px; position: absolute; " src="./image/dots.svg"></img>
+            </div>
+        </div>   
+        <div style="color: black; font-size: 20px; font-family: Satoshi; font-weight: 700; line-height: 22px; word-wrap: break-word">Samantha D.<span><img src="./image/click.svg" ></div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 500; line-height: 22px; word-wrap: break-word">Posted on August 14, 2023</div>
+    </div>
+    <div style="display: flex;flex-direction: column; width: 50%; height: 100%; padding-left: 32px; padding-right: 32px; padding-top: 28px; padding-bottom: 28px; border-radius: 20px; overflow: hidden; border: 1px rgba(0, 0, 0, 0.10) solid; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="display: flex;width: 100%; gap: 80%;">
+            <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; gap: 6.49px; display: inline-flex">
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+            </div>  
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="width: 25.25px; height: 15.25px; left: 1.87px; top: 9.38px; position: absolute; " src="./image/dots.svg"></img>
+            </div>
+        </div>   
+        <div style="color: black; font-size: 20px; font-family: Satoshi; font-weight: 700; line-height: 22px; word-wrap: break-word">Alex M.<span><img src="./image/click.svg" ></div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">""The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.""</div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 500; line-height: 22px; word-wrap: break-word">Posted on August 15, 2023</div>
+    </div>
+    
+
+    
+</div>
+<div style="display: flex;gap: 20px;padding-left: 10%;padding-right: 10%;padding-top: 20px;">
+    <div style="display: flex;flex-direction: column; width: 50%; height: 100%; padding-left: 32px; padding-right: 32px; padding-top: 28px; padding-bottom: 28px; border-radius: 20px; overflow: hidden; border: 1px rgba(0, 0, 0, 0.10) solid; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="display: flex;width: 100%; gap: 80%;">
+            <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; gap: 6.49px; display: inline-flex">
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+            </div>  
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="width: 25.25px; height: 15.25px; left: 1.87px; top: 9.38px; position: absolute; " src="./image/dots.svg"></img>
+            </div>
+        </div>   
+        <div style="color: black; font-size: 20px; font-family: Satoshi; font-weight: 700; line-height: 22px; word-wrap: break-word">Ethan R.<span><img src="./image/click.svg" ></div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">""This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.""</div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 500; line-height: 22px; word-wrap: break-word">Posted on August 16, 2023</div>
+    </div>
+    <div style="display: flex;flex-direction: column; width: 50%; height: 100%; padding-left: 32px; padding-right: 32px; padding-top: 28px; padding-bottom: 28px; border-radius: 20px; overflow: hidden; border: 1px rgba(0, 0, 0, 0.10) solid; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="display: flex;width: 100%; gap: 80%;">
+            <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; gap: 6.49px; display: inline-flex">
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+            </div>  
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="width: 25.25px; height: 15.25px; left: 1.87px; top: 9.38px; position: absolute; " src="./image/dots.svg"></img>
+            </div>
+        </div>   
+        <div style="color: black; font-size: 20px; font-family: Satoshi; font-weight: 700; line-height: 22px; word-wrap: break-word">Olivia P.<span><img src="./image/click.svg" ></div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">""As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.""</div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 500; line-height: 22px; word-wrap: break-word">Posted on August 17, 2023</div>
+    </div>
+    
+   
+</div>
+
+
+<div style="display: flex;gap: 20px;padding-left: 10%;padding-right: 10%;padding-top: 20px;">
+    <div style="display: flex;flex-direction: column; width: 50%; height: 100%; padding-left: 32px; padding-right: 32px; padding-top: 28px; padding-bottom: 28px; border-radius: 20px; overflow: hidden; border: 1px rgba(0, 0, 0, 0.10) solid; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="display: flex;width: 100%; gap: 80%;">
+            <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; gap: 6.49px; display: inline-flex">
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+            </div>  
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="width: 25.25px; height: 15.25px; left: 1.87px; top: 9.38px; position: absolute; " src="./image/dots.svg"></img>
+            </div>
+        </div>   
+        <div style="color: black; font-size: 20px; font-family: Satoshi; font-weight: 700; line-height: 22px; word-wrap: break-word">Liam K.<span><img src="./image/click.svg" ></div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">""This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.""</div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 500; line-height: 22px; word-wrap: break-word">Posted on August 18, 2023</div>
+    </div>
+    <div style="display: flex;flex-direction: column; width: 50%; height: 100%; padding-left: 32px; padding-right: 32px; padding-top: 28px; padding-bottom: 28px; border-radius: 20px; overflow: hidden; border: 1px rgba(0, 0, 0, 0.10) solid; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="display: flex;width: 100%; gap: 80%;">
+            <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; gap: 6.49px; display: inline-flex">
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+                <img style="width: 10.74px; height: 20.42px" src="./image/Star.svg"></img>
+            </div>  
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="width: 25.25px; height: 15.25px; left: 1.87px; top: 9.38px; position: absolute; " src="./image/dots.svg"></img>
+            </div>
+        </div>   
+        <div style="color: black; font-size: 20px; font-family: Satoshi; font-weight: 700; line-height: 22px; word-wrap: break-word">Ava H.<span><img src="./image/click.svg" ></div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">""I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.""</div>
+        <div style="width: 100%; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 500; line-height: 22px; word-wrap: break-word">Posted on August 19, 2023</div>
+    </div>
+    
+    
+</div>
+<div style="align-content: center; justify-content: center;  padding-top: 50px; padding-left: 40%;padding-bottom: 2%;">
+    <div style=" width: 20%; height: 50%; padding-left: 50px; padding-right: 54px; padding-top: 16px; padding-bottom: 16px; border-radius: 62px; overflow: hidden; border: 2px rgba(0, 0, 0, 0.10) solid; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+    <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">Load More Reviews</div>
+    </div>
+</div>
+
+    <div style="display: flex;gap: 720px;align-items: center;">
+        <div style="height:100%;width: 100%; text-align:center;  color: black; font-size: 48px; font-family: Integral CF; font-weight: 700; word-wrap: break-word">You might also like</div>   
+    </div>
+        
+    <div style="align-content: center;border-radius: 30px; justify-content: center; " >
+
+
+        <div style="width: 100%;height: 100%; justify-content: center; align-items: center; gap: 5%; display: inline-flex ">
+            <div style="height: 100%; width: 100%; justify-content: center; align-items: center; gap: 30px; display: inline-flex ">
+             <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/Tshirt1.png" />
+                <div><b>Polo with Contrast Trims</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div>$212</div>
+                    <div style="color: rgba(0, 0, 0, 0.40); font-size: 24px; font-family: Satoshi; font-weight: 700; text-decoration: line-through; word-wrap: break-word">$232</div>
+                    <div style="background-color: rgba(255, 51, 51, 0.10); color: #FF3333; font-size: 12px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">-20%</div>
+                    </div>
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/Tshirt2.png" />
+                <div><b>Gradient Graphic T-shirt</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">3.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div>$145</div>
+                
+
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/Tshirt3.png" />
+                <div><b>Polo with Tipping Details</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                <div>$80</div>
+            </div>
+            <div class="parrent">
+                <img style="width: 100%; height: 100%; border-radius: 20px;" src="./image/Tshirt4.png" />
+                <div><b>Black Striped T-shirt</b></div>
+                <div style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 13px; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: flex-start; gap: 5.31px; display: flex">
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                        <img class="staricon" src="./image/Star.svg"></img>
+                    </div>
+                    <div><span class="rating1">4.5/</span><span class="rating2">5</span></div>
+                </div>
+                
+                <div>$120</div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  
+<div style="padding-right: 10%;padding-left: 15%;padding-top: 2%;padding-bottom: 2%;">
+  <div style=" width: 80%; height: 100%; padding-left: 64px; padding-right: 64px; padding-top: 36px; padding-bottom: 36px; background: black; border-radius: 20px; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+    <div style="width: 551px; height: 94px; color: white; font-size: 40px; font-family: Integral CF; font-weight: 700; line-height: 45px; word-wrap: break-word">STAY UPTO DATE ABOUT OUR LATEST OFFERS</div>
+    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: inline-flex">
+        <div style="width: 349px; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; background: white; border-radius: 62px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+            <div style="width: 24px; height: 24px; position: relative">
+                <img style="width: 20.25px; height: 15.75px; left: 1.88px; top: 4.12px; position: absolute;" src="./image/mail.svg"></img>
+            </div>
+            <div style="color: rgba(0, 0, 0, 0.40); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Enter your email address</div>
+        </div>
+        <div style="width: 349px; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; background: white; border-radius: 62px; overflow: hidden; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+            <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; word-wrap: break-word">Subscribe to Newsletter</div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="   width: 100%; height: 100%;padding-top: 2%; justify-content: space-between; align-items: flex-start; display: inline-flex">
+    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 35px;padding-left: 1%;padding-right: 1%; display: inline-flex">
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 25px; display: flex">
+            <div style="color: black; font-size: 33.45px; font-family: Integral CF; font-weight: 700; word-wrap: break-word">SHOP.CO</div>
+            <div style="width: 248px; color: rgba(0, 0, 0, 0.60); font-size: 14px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">We have clothes that suits your style and which you’re proud to wear. From women to men.</div>
+        </div>
+        <div>
+         <img src="./image/Social.svg" style="width: 148px; height: 28px; position: relative">
+        </div>
+    </div>
+    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+        <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">Company</div>
+        <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">About          <br/><br/>Features          <br/><br/>Works          <br/><br/>Career  </div>
+    </div>
+    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+        <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">Help</div>
+        <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">Customer Support<br/><br/>Delivery Details<br/><br/>Terms & Conditions<br/><br/>Privacy Policy</div>
+    </div>
+    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+        <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">FAQ</div>
+        <div style="width: 149px; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">Account<br/><br/>Manage Deliveries<br/><br/>Orders<br/><br/>Payments</div>
+    </div>
+    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+        <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">Resources</div>
+        <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">Free eBooks<br/><br/>Development Tutorial<br/><br/>How to - Blog<br/><br/>Youtube Playlist</div>
+    </div>   
+</div>
+      <div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.40) solid"></div>
+
+      <div style="display: flex;gap: 720px;align-items: center;">
+        <div style=" text-align: right; color: rgba(0, 0, 0, 0.60); font-size: 14px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Shop.co © 2000-2023, All Rights Reserved</div>
+        <div style="align-items: center;">
+          <img src="./image/visa.svg"  style="align-items: center;">
+          <img src="./image/Badge.svg">
+          <img src="./image/paypal.svg">
+          <img src="./image/ipay.svg" >
+          <img src="./image/gpay.svg" >
+        </div> 
+      </div> 
+    </body>
