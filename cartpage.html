@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+
+<body>
+    <div class="nav-bar">
+        <p style="align-items: center;">Sign up and get 20% off to your first order.<a href="#" style="color: white;"> Sign Up Now</a></p>
+        <div class="cross-nav">
+            <img src="./image/close.svg" alt="cross"/>
+        </div>
+      </div>
+        <div style="align-content: center;justify-content: center; padding-bottom: 10px; padding-top: 10px;padding-left: 5%;padding-right: 10%;">
+            <div class="demo">
+                <img class="lines" id="abcd" onclick="myFunction()" src="./image/3lines.svg">
+                <!-- It is for shop.co-->
+                <div class="shop">SHOP.CO</div>
+                <!-- It is for shop to brands-->
+                <div class="shop_container">
+                    <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                        <div class="item">Shop</div>
+                        <div style="width: 16px; height: 16px; position: relative">
+                            <img src="./image/arrow.svg" style="width: 13.50px; height: 10.50px; left: 2.25px; top: 5.25px; position: absolute; background: white"></img>
+                        </div>
+                    </div>
+                    <div class="item">On Sale</div>
+                    <div class="item">New Arrivals</div>
+                    <div class="item">Brands</div>
+                </div>
+                
+                <!-- It is for search products-->
+                <div class="search_box">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img style="width: 22.27px; height: 22.27px; left: 10.86px; position: relative; background: #F0F0F0;" src="./image/search.svg"></img>
+                    </div>
+                    <div style="color: rgba(0, 0, 0, 0.40); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Search for products...</div>
+                </div>
+        
+        
+                <!-- It is for profile and bag sign-->
+                <div class="profile">
+                    <div class="t1">
+                        <img class="icon" src="./image/addcart.svg">
+                    </div>
+                
+                    <div class="t1">
+                        <img class="icon" src="./image/profile.svg" /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid"></div>
+            <div class="flex_row">
+                <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Home</div>
+                    <div  style="width: 16px; height: 16px; position: relative;">
+                    <img  style="width:15.50px; height:10.50px; left:2px; top:3.2px" src="./image/forward_arrow.svg"></img>
+                </div>
+                <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Casual</div>
+                    <div  style="width: 16px; height: 16px; position: relative;">
+                    <img  style="width:15.50px; height:10.50px; left:2px; top:3.2px" src="./image/forward_arrow.svg"></img>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div style="width: max-content;height: max-content;display: flex;flex-direction: column;gap: 10px;">
+            <div class="box1" id="box1">
+                <div class="div1">
+                    <div class="image-1">
+                        <img src="./image/img1.png" style="height: 6rem;width: 5rem;"/>
+                    </div>
+                    <div class="col-1">
+                        <div class="abc">
+                            <p class="b1">Gradient Graphic T-shirt</p>
+                            <img src="./image/delete.svg" style="height: 15px;width: 15px;"/>
+                        </div>
+                        <p class=" b2">Size:<span class="b3"> Large</p>
+                        <p class="b2">Color:<span class="b3"> White</p>
+                        <div class=" abc" >
+                            <p class="b1">$145</p>
+                            <div class="inc">
+                                <p class="b1">-</p>
+                                        <p>1</p>
+                                <p class="b1">+</p>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="box2" id="box2">
+                <div class="div1">
+                    <div class="image-1">
+                        <img src="./image/image9.png" style="height: 6rem;width: 5rem;"/>
+                    </div>
+                    <div class="col-1">
+                        <div class=" abc" >
+                            <p class="b1">Gradient Graphic T-shirt</p>
+                            <img src="./image/delete.svg" style="height: 15px;width: 15px;"/>
+                        </div>
+                        <p class=" b2">Size:<span class="b3"> Large</p>
+                        <p class="b2">Color:<span class="b3"> White</p>
+                            <div class=" abc" >
+                                <p class="b1">$145</p>
+                                <div class="inc">
+                                    <p class="b1">-</p>
+                                    <p>1</p>
+                                    <p class="b1">+</p>
+                                </div>
+                            </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="box3" id="box3">
+                <div class="div1">
+                    <div class="image-1">
+                        <img src="./image/image8.png" style="height: 6rem;width: 5rem;"/>
+                    </div>
+                    <div class="col-1">
+                        <div class="abc">
+                            <p class="b1">Gradient Graphic T-shirt</p>
+                            <img src="./image/delete.svg" style="height:15px;width: 15px;"/>
+                        </div>
+                        <p class=" b2">Size:<span class="b3"> Large</p>
+                        <p class="b2">Color:<span class="b3"> White</p>
+                            <div class="abc">
+                                <p class="b1">$145</p>
+                            <div class="inc">
+                                <p class="b1">-</p>
+                                <p>1</p>
+                                <p class="b1">+</p>
+                            </div>
+                        </div>
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="box4" id="box4">
+                <div class="div2">
+                    <p class="b1">Order Summary</p>
+                    <div class=" abc" >
+                        <p class="b3">Subtotal</p>
+                        <p class="b1">$565</p>
+                    </div>
+                    <div class=" abc" >
+                        <p class="b3">Discount (-20%)</p>
+                        <p class="b1">-$113</p>
+                    </div>
+                    <div class=" abc" >
+                        <p class="b3">Delivery Fee</p>
+                        <p class="b1">$15</p>
+                    </div>
+                </div>
+                <div style="width: 100%;border: 1px rgba(0, 0, 0, 0.10) solid"></div>
+                <div style="display:flex;justify-content: space-between;padding-top: 10px;">
+                    <p class="b2">Total</p>
+                    <p class="b1">$467</p>
+                </div>
+             
+            <div class="div3">
+                <div class="inc" style="width: 16rem;"><span style="color:rgba(0, 0, 0, 0.40);">Add promo code</div>
+                <div class="inc" style="background-color: black;"><span style="color: white;" >Apply</div>
+            </div> 
+            <div class="go-to-check">
+                <div class="inc" style="background-color: black;width: 100%"><span style="color: white;" >Apply</div>
+            </div>
+            </div>
+        </div>
+    
+</body>
+</html>

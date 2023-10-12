@@ -30,10 +30,55 @@
    
     .main .row-1{
         display: flex;
-        
+        padding: 2rem;
     }
-   
-   
+    .img-1{
+        flex: 1;
+    }
+    .img-2{
+        flex: 1;
+    }
+    .img-3{
+        flex: 1;
+    }
+    .img-4{
+        flex: 1;
+    }
+    .img-5{
+        flex: 1;
+    }
+    .img-6{
+        flex: 1;
+    }
+    .img-7{
+        display: none;
+    }
+    .img-8{
+        display: none;
+    }
+    .img-9{
+        display: none;
+    }
+.container-for-shop{
+    display: flex;
+    gap: 2rem;
+    padding: 10px;
+}
+.child-container{
+    display: none;
+}
+.child-container-for-shop2{
+    flex: 3;
+}
+.child-container-for-shop3{
+    flex: 3;
+}
+.child-container-for-shop4{
+    flex: 1;
+}
+.child-container-for-shop5{
+    flex: 1;
+}
 }
 
 
@@ -159,7 +204,7 @@ width: 100%;
      font-weight: 700;
       word-wrap: break-word
    } 
-.last_section{
+/* .last_section{
     padding-right: 2%;
     padding-left: 10%;
     padding-top: 2%;
@@ -177,12 +222,37 @@ width: 100%;
     justify-content: space-between; 
     align-items: center;
     display: inline-flex
-}
+} */
 /* .footer-line{
     display: flex;
     gap: 720px;
     align-items: center;
 } */
+.container-for-shop{
+    width: 100%; 
+    height: 100%;
+    padding-top: 2%; 
+    justify-content: space-between; 
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.child-container-for-shop1{
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 35px;
+    padding-left: 1%;
+    padding-right: 1%; 
+    display:flex
+}
+.child-container-for-shop2{
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 26px; 
+    display: flex
+}
 
 </style>
 </head>
@@ -348,7 +418,7 @@ width: 100%;
 
         <div class="main"> 
             <div class="row-1">  
-                <div style=" display: flex;flex-direction: column;">  
+                <div style=" display: flex;flex-direction: column;" class="img-1">  
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/Tshirt1.png" />
                     </div>                    
@@ -362,7 +432,7 @@ width: 100%;
                     </div>
                     <div class="st1">$145</div>
                 </div>
-                <div style="display: flex;flex-direction: column;">
+                <div style="display: flex;flex-direction: column;" class="img-2">
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/Tshirt3.png" />
                     </div>                   
@@ -376,7 +446,7 @@ width: 100%;
                     </div>
                     <div class="st1">$145</div>
                 </div>
-                <div style="display: flex;flex-direction: column;">
+                <div style="display: flex;flex-direction: column;" class="img-3">
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/Tshirt4.png" />
                     </div>
@@ -391,7 +461,7 @@ width: 100%;
                     <div class="st1">$145</div>
                 </div>
            
-                <div style="display: flex;flex-direction: column;">
+                <div style="display: flex;flex-direction: column;"class="img-4">
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/image8.png" />
                     </div>                    
@@ -405,7 +475,7 @@ width: 100%;
                     </div>
                     <div class="st1">$145</div>
                 </div>
-                <div style="display: flex;flex-direction: column;">
+                <div style="display: flex;flex-direction: column;" class="img-5">
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/image9.png" />
                     </div>                    
@@ -419,7 +489,7 @@ width: 100%;
                     </div>
                     <div class="st1">$145</div>
                 </div>
-                <div style="display: flex;flex-direction: column;">
+                <div style="display: flex;flex-direction: column;"class="img-6">
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/image10.png" />
                     </div>                      
@@ -433,21 +503,23 @@ width: 100%;
                     </div>
                     <div class="st1">$145</div>
                 </div>
-           
-                <div style="display: flex;flex-direction: column;">
-                    <div class="ig">
-                        <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/image 7.png" />
-                    </div>                      
-                    <div class="st">Gradient Graphic T-shirt</div>
-                    <div class="star_class">
-                        <img class="staricon" src="./image/Star.svg"></img>
-                        <img class="staricon" src="./image/Star.svg"></img>
-                        <img class="staricon" src="./image/Star.svg"></img>
-                        <img class="staricon" src="./image/Star.svg"></img>
-                        <img class="staricon" src="./image/Star.svg"></img>
+                <div class="img-7">
+                    <div style="display: flex;flex-direction: column;">
+                        <div class="ig">
+                            <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/image 7.png" />
+                        </div>                      
+                        <div class="st">Gradient Graphic T-shirt</div>
+                        <div class="star_class">
+                            <img class="staricon" src="./image/Star.svg"></img>
+                            <img class="staricon" src="./image/Star.svg"></img>
+                            <img class="staricon" src="./image/Star.svg"></img>
+                            <img class="staricon" src="./image/Star.svg"></img>
+                            <img class="staricon" src="./image/Star.svg"></img>
+                        </div>
+                        <div class="st1">$145</div>
                     </div>
-                    <div class="st1">$145</div>
                 </div>
+                <div class="img-7">
                 <div style="display: flex;flex-direction: column;">
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/image 8.png" />
@@ -462,6 +534,8 @@ width: 100%;
                     </div>
                     <div class="st1">$145</div>
                 </div>
+                </div>
+                <div class="img-9">
                 <div style="display: flex;flex-direction: column;">
                     <div class="ig">
                         <img style="width: 100%; height: 100%;border-radius: 20px" src="./image/image 9.png" />
@@ -475,6 +549,7 @@ width: 100%;
                         <img class="staricon" src="./image/Star.svg"></img>
                     </div>
                     <div class="st1">$145</div>
+                </div>
                 </div>
             </div> 
             <div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.10) solid"></div>  
@@ -500,34 +575,37 @@ width: 100%;
       </div>
       </div> -->
       
-      <!-- <div style="   width: 100%; height: 100%;padding-top: 2%; justify-content: space-between; align-items: flex-start; display: inline-flex">
-          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 35px;padding-left: 1%;padding-right: 1%; display: inline-flex">
-              <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 25px; display: flex">
-                  <div style="color: black; font-size: 33.45px; font-family: Integral CF; font-weight: 700; word-wrap: break-word">SHOP.CO</div>
-                  <div style="width: 248px; color: rgba(0, 0, 0, 0.60); font-size: 14px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">We have clothes that suits your style and which you’re proud to wear. From women to men.</div>
-              </div>
-              <div>
-               <img src="./image/Social.svg" style="width: 148px; height: 28px; position: relative">
-              </div>
-          </div>
-          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+       <div class="container-for-shop">
+        <div class="child-container">
+            <div class="child-container-for-shop1">
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 25px; display: flex">
+                    <div style="color: black; font-size: 33.45px; font-family: Integral CF; font-weight: 700; word-wrap: break-word">SHOP.CO</div>
+                    <div style="width: 248px; color: rgba(0, 0, 0, 0.60); font-size: 14px; font-family: Satoshi; font-weight: 400; line-height: 22px; word-wrap: break-word">We have clothes that suits your style and which you’re proud to wear. From women to men.</div>
+                </div>
+                <div>
+                 <img src="./image/Social.svg" style="width: 148px; height: 28px; position: relative">
+                </div>
+            </div>
+        </div>
+          
+          <div class="child-container-for-shop2">
               <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">Company</div>
               <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">About          <br/><br/>Features          <br/><br/>Works          <br/><br/>Career  </div>
           </div>
-          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+          <div class="child-container-for-shop3">
               <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">Help</div>
               <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">Customer Support<br/><br/>Delivery Details<br/><br/>Terms & Conditions<br/><br/>Privacy Policy</div>
           </div>
-          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+          <div class="child-container-for-shop4">
               <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">FAQ</div>
               <div style="width: 149px; color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">Account<br/><br/>Manage Deliveries<br/><br/>Orders<br/><br/>Payments</div>
           </div>
-          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
+          <div class="child-container-for-shop5">
               <div style="color: black; font-size: 16px; font-family: Satoshi; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 3px; word-wrap: break-word">Resources</div>
               <div style="color: rgba(0, 0, 0, 0.60); font-size: 16px; font-family: Satoshi; font-weight: 400; line-height: 19px; word-wrap: break-word">Free eBooks<br/><br/>Development Tutorial<br/><br/>How to - Blog<br/><br/>Youtube Playlist</div>
           </div>   
       </div>
-        <div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.40) solid"></div>
+        <!--<div style="width: 100%; height: 100%; border: 1px rgba(0, 0, 0, 0.40) solid"></div>
       
             <div class="footer-line">
               <div style=" text-align: right; color: rgba(0, 0, 0, 0.60); font-size: 14px; font-family: Satoshi; font-weight: 400; word-wrap: break-word">Shop.co © 2000-2023, All Rights Reserved</div>
