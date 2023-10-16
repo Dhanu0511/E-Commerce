@@ -15,13 +15,12 @@
         display: none;
     }
     .container{
-        grid-template-rows: 9vw 9vw 9vw 30vw;
-        grid-template-columns: 1fr;
-        grid-template-areas: "box1"
-                             "box2"
-                             "box3"
-                             "box4";
+       flex-direction: column;
+       row-gap: 20px;
+       padding: 30px;
     }
+    
+   
 }
 .nav-bar{
     width: 100%; 
@@ -50,6 +49,30 @@
     text-align:start;
     justify-content: flex-start;
 }
+.hide{
+    display: none;
+}
+.slider { 
+
+   
+    
+}
+.slider-flex{
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    display: flex;
+    padding:5px ;
+    width: 20%;
+    border-radius: 20px; 
+    height: 100%;  
+    overflow: hidden; 
+    border: 1px rgba(0, 0, 0, 0.10) solid; 
+}
+
+/* .show-slider{
+    transform: translate(0%) !important;
+} */
 .shop{
     color: black; 
     font-size: 32px; 
@@ -94,14 +117,13 @@
     padding-top: 10px;
 }
 .container{
-    display: grid;
+    display: flex;
     height: 100%;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 9vw 9vw 9vw;
-    column-gap: 30px;
-    row-gap: 20px;
-    padding-top: 40px;
+    column-gap: 100px;
     padding: 50px;
+}
+.dhanu{
+    display: none;
 }
 .box1{
     border-radius: 20px;
@@ -123,23 +145,14 @@
     border: 2px solid rgba(0, 0, 0, 0.60);
     padding: 10px;
 }
-#box1 {
-    width: 40vw;
-}
-#box2{
-    width: 40vw;
-}
-#box3{
-    width: 40vw;
-}
+
 #box4{
-    
     height: 20rem;
     grid-area: 1/2/4/3;
 }
 .div1{
     display: flex;
-    height: 7vw;
+    height:100%;
     gap: 1rem;
 }
 .col-1{
@@ -153,6 +166,7 @@
     font-size: 20px; 
     font-family: Satoshi; 
     font-weight: 700; 
+    word-wrap: break-word;
 }
 .b2{
     color: black; 
@@ -167,6 +181,9 @@
     font-family: Satoshi; 
     font-weight: 400; 
     word-wrap: break-word
+}
+.image-1{
+    height: 100%;
 }
 .inc{
     width: 6rem; 
@@ -196,4 +213,11 @@
     width: 100%;
     padding: 10px;
 
+}
+.child-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
